@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="referrer" content="never">
+    <title>api 接口文档</title>
+    <meta name="description" content="兽人永不为奴~~~除非包吃又包住～～～">
+    <link rel="icon" href="/logo.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+  <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.32b66682.css" as="style"><link rel="preload" href="/assets/js/app.3184a6a2.js" as="script"><link rel="preload" href="/assets/js/31.5d35c295.js" as="script"><link rel="prefetch" href="/assets/js/20.92fe233b.js"><link rel="prefetch" href="/assets/js/2.d62d4ff9.js"><link rel="prefetch" href="/assets/js/3.802dab0f.js"><link rel="prefetch" href="/assets/js/4.dbcc2adb.js"><link rel="prefetch" href="/assets/js/5.4adea544.js"><link rel="prefetch" href="/assets/js/6.58de709a.js"><link rel="prefetch" href="/assets/js/7.a5a75c7e.js"><link rel="prefetch" href="/assets/js/8.7f2e495a.js"><link rel="prefetch" href="/assets/js/9.1291fa0e.js"><link rel="prefetch" href="/assets/js/10.2fabea8f.js"><link rel="prefetch" href="/assets/js/11.bb28ef39.js"><link rel="prefetch" href="/assets/js/12.6df783fa.js"><link rel="prefetch" href="/assets/js/13.fa4956cb.js"><link rel="prefetch" href="/assets/js/14.0df9074c.js"><link rel="prefetch" href="/assets/js/15.ce06c09b.js"><link rel="prefetch" href="/assets/js/16.efe0a9a7.js"><link rel="prefetch" href="/assets/js/17.4697c9db.js"><link rel="prefetch" href="/assets/js/18.babd3f94.js"><link rel="prefetch" href="/assets/js/19.3168d3d7.js"><link rel="prefetch" href="/assets/js/21.116e62cc.js"><link rel="prefetch" href="/assets/js/22.c1a16a7c.js"><link rel="prefetch" href="/assets/js/23.a1aed0ac.js"><link rel="prefetch" href="/assets/js/24.b0a62875.js"><link rel="prefetch" href="/assets/js/25.3ad846cd.js"><link rel="prefetch" href="/assets/js/26.4cdf21f1.js"><link rel="prefetch" href="/assets/js/27.9aad70b3.js"><link rel="prefetch" href="/assets/js/28.6159bc67.js"><link rel="prefetch" href="/assets/js/29.f3205a01.js"><link rel="prefetch" href="/assets/js/30.c6a75514.js"><link rel="prefetch" href="/assets/js/32.e8a88456.js"><link rel="prefetch" href="/assets/js/33.5763d28a.js"><link rel="prefetch" href="/assets/js/34.eef6dff6.js"><link rel="prefetch" href="/assets/js/35.c55b1d53.js"><link rel="prefetch" href="/assets/js/36.04ec4e4f.js"><link rel="prefetch" href="/assets/js/37.1445889e.js"><link rel="prefetch" href="/assets/js/38.c2369325.js"><link rel="prefetch" href="/assets/js/39.591d4a7a.js"><link rel="prefetch" href="/assets/js/40.8b2243c5.js"><link rel="prefetch" href="/assets/js/41.bd7ec86f.js"><link rel="prefetch" href="/assets/js/42.9aa2497b.js"><link rel="prefetch" href="/assets/js/43.70b2f705.js"><link rel="prefetch" href="/assets/js/44.e72dad09.js"><link rel="prefetch" href="/assets/js/45.0c0cf019.js"><link rel="prefetch" href="/assets/js/46.36fe7f81.js"><link rel="prefetch" href="/assets/js/47.5966ce65.js"><link rel="prefetch" href="/assets/js/48.44fd153d.js"><link rel="prefetch" href="/assets/js/49.4c65524f.js"><link rel="prefetch" href="/assets/js/50.e9e1beef.js"><link rel="prefetch" href="/assets/js/51.f67e5993.js"><link rel="prefetch" href="/assets/js/52.51f3a2dd.js"><link rel="prefetch" href="/assets/js/53.25eec254.js"><link rel="prefetch" href="/assets/js/54.3cb3da5d.js"><link rel="prefetch" href="/assets/js/55.659c7163.js"><link rel="prefetch" href="/assets/js/56.658cee8e.js"><link rel="prefetch" href="/assets/js/57.6b9778d2.js"><link rel="prefetch" href="/assets/js/58.37b95470.js"><link rel="prefetch" href="/assets/js/59.de5ddd5f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.32b66682.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" style="position:relative;"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <div class="home-link router-link-active"><img src="/left-logo.png" alt="" class="logo"> <!----></div> <div class="search" style="max-width:-300px;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" placeholder="请输入组件名称" value=""> <!----></div></div> <div class="links" style="max-width:-300px;"><nav class="nav-links can-hide"><div class="nav-item"><a href="/front/git/doc.html" class="nav-link">大前端</a></div><div class="nav-item"><a href="/note/01.html" class="nav-link">读书笔记</a></div><div class="nav-item"><a href="/about.html" class="nav-link">关于</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/front/git/doc.html" class="nav-link">大前端</a></div><div class="nav-item"><a href="/note/01.html" class="nav-link">读书笔记</a></div><div class="nav-item"><a href="/about.html" class="nav-link">关于</a></div> <!----></nav> <!----></div> <div id="area" class="page"> <div class="content"><h2 id="api-接口文档"><a href="#api-接口文档" aria-hidden="true" class="header-anchor">#</a> api 接口文档</h2> <h3 id="用户接口"><a href="#用户接口" aria-hidden="true" class="header-anchor">#</a> 用户接口</h3> <p>路由: <code>user/register</code> post 方法
+参数:</p> <table><thead><tr><th>name</th> <th style="text-align:center">说明</th> <th style="text-align:center">类型</th> <th>作用</th></tr></thead> <tbody><tr><td>nickname</td> <td style="text-align:center">用户名</td> <td style="text-align:center">string</td> <td>****</td></tr> <tr><td>password</td> <td style="text-align:center">密码</td> <td style="text-align:center">string</td> <td>****</td></tr> <tr><td>confirm_password</td> <td style="text-align:center">确认密码</td> <td style="text-align:center">string</td> <td>****</td></tr> <tr><td>email</td> <td style="text-align:center">邮箱，可选</td> <td style="text-align:center">string</td> <td>****</td></tr> <tr><td>group_id</td> <td style="text-align:center">分组 id</td> <td style="text-align:center">int</td> <td>****</td></tr></tbody></table> <p>备注： 用户注册，管理员可用</p> <p><code>发送</code>：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;nickname&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pedro&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;password&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;confirm_password&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;group_id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1312342604@qq.com&quot;</span> // 注意，email为可选项
+<span class="token punctuation">}</span>
+</code></pre></div><p><code>结果</code>：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;error_code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;用户创建成功&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;request&quot;</span><span class="token operator">:</span> <span class="token string">&quot;POST  /user/register&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <p>路由: <code>user/login</code> post 方法
+参数:</p> <table><thead><tr><th>name</th> <th style="text-align:center">说明</th> <th style="text-align:center">类型</th> <th>作用</th></tr></thead> <tbody><tr><td>nickname</td> <td style="text-align:center">用户名</td> <td style="text-align:center">string</td> <td>****</td></tr> <tr><td>password</td> <td style="text-align:center">密码</td> <td style="text-align:center">string</td> <td>****</td></tr></tbody></table> <p>备注： 用户登陆，jwt 的使用参考<a href="/lin/inside/jwt.html">jwt</a></p> <p><code>发送</code>：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;nickname&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pedro&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;password&quot;</span><span class="token operator">:</span> <span class="token string">&quot;123456&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><code>结果</code>：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;access_token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MzU2ODk1NjksIm5iZiI6MTUzNTY4OTU2OSwianRpIjoiMTY4YjQxMzEtZmViZi00MGI0LWJiNDEtNGY4NDE0YjU2N2Q0IiwiZXhwIjoxNTM1Nzc1OTY5LCJpZGVudGl0eSI6InBlZHJvIiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.8kALcljzvTeBhgN0A8JZYvZTpQuXmh43si3wsmit2aY&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;refresh_token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MzU2ODk1NjksIm5iZiI6MTUzNTY4OTU2OSwianRpIjoiYzk4ZTEzNGUtMDVhZi00NDg4LThhN2EtNWE2ODcyNzY5NmRiIiwiZXhwIjoxNTM4MjgxNTY5LCJpZGVudGl0eSI6InBlZHJvIiwidHlwZSI6InJlZnJlc2gifQ.VRqXM-p5r8hS1Gwss8SQVqmED-lqHcOOaJNlDADyBYk&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <p>路由: <code>user/</code> put 方法
+参数:</p> <table><thead><tr><th>name</th> <th style="text-align:center">说明</th> <th style="text-align:center">类型</th> <th>作用</th></tr></thead> <tbody><tr><td>email</td> <td style="text-align:center">邮箱</td> <td style="text-align:center">string</td> <td>****</td></tr></tbody></table> <p>备注： 用户更新自己的邮箱</p> <p><code>发送</code>：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1312342604@qq.com&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><code>结果</code>：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;error_code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;操作成功&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;request&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PUT  /cms/user/&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <p>路由: <code>user/change_password</code> put 方法
+参数:</p> <table><thead><tr><th>name</th> <th style="text-align:center">说明</th> <th style="text-align:center">类型</th> <th>作用</th></tr></thead> <tbody><tr><td>old_password</td> <td style="text-align:center">旧密码</td> <td style="text-align:center">string</td> <td>****</td></tr> <tr><td>new_password</td> <td style="text-align:center">新密码</td> <td style="text-align:center">string</td> <td>****</td></tr> <tr><td>confirm_password</td> <td style="text-align:center">确认密码</td> <td style="text-align:center">string</td> <td>****</td></tr></tbody></table> <p>备注： 用户修改密码</p> <hr> <p>路由: <code>user/information</code> get 方法
+参数: 无</p> <p>备注： 用户查询自己信息</p> <p><code>结果</code>：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;active&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;create_time&quot;</span><span class="token operator">:</span> <span class="token number">1540130093000</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;delete_time&quot;</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1312342604@qq.com&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;group_id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;nickname&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pedro&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;super&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;update_time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-12-05T10:14:39Z&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <p>路由: <code>user/refresh</code> get 方法
+参数: 无</p> <p>备注： 刷新 token，记住在 header 中带上 refresh_token</p> <p><code>结果</code>：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;access_token&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDM5NzY0MTIsIm5iZiI6MTU0Mzk3NjQxMiwianRpIjoiNGE4MGNiNGQtMWRjNS00NTE4LWFiODMtYWM5ZWFmMmZkZTNiIiwiZXhwIjoxNTQzOTgwMDEyLCJpZGVudGl0eSI6MiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.AycX8UpOcfdDs0BOihpGvR5spP08qR5uZCr6K-S3o4M&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <p>路由: <code>user/auths</code> get 方法
+参数: 无</p> <p>备注： 获得当前用户所有可用权限</p> <p><code>结果</code>：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;active&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;auths&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;图书&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;auth&quot;</span><span class="token operator">:</span> <span class="token string">&quot;删除图书&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;module&quot;</span><span class="token operator">:</span> <span class="token string">&quot;图书&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;create_time&quot;</span><span class="token operator">:</span> <span class="token number">1540130093000</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;delete_time&quot;</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1312342604@qq.com&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;group_id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;nickname&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pedro&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;super&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;update_time&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2018-12-05T10:14:39Z&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <h3 id="管理员接口"><a href="#管理员接口" aria-hidden="true" class="header-anchor">#</a> 管理员接口</h3> <p>路由: <code>admin/authority</code> get 方法
+参数: 无</p> <p>备注： 获得所有可用的权限</p> <p><code>结果</code>：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;信息&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;查看lin的信息&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;cms.test+info&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;推送&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;消息推送&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;cms.notify+stream&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;获得events&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;cms.notify+get_events&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;日志&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;搜索日志&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;cms.log+get_user_logs&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;查询所有日志&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;cms.log+get_logs&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;查询日志记录的用户&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;cms.log+get_users&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <p>路由: <code>admin/users</code> get 方法
+参数: 无</p> <p>备注： 查询所有用户</p> <p><code>结果</code>：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;collection&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;active&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;create_time&quot;</span><span class="token operator">:</span> <span class="token number">1540130093000</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1312342604@qq.com&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;group_id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;group_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;普通分组&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;nickname&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pedro&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;super&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;active&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;create_time&quot;</span><span class="token operator">:</span> <span class="token number">1543120583000</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;group_id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;group_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;普通分组&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;nickname&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pedro1&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;super&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;active&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;create_time&quot;</span><span class="token operator">:</span> <span class="token number">1543120597000</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;group_id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;group_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;普通分组&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;nickname&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pedro2&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;super&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;active&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;create_time&quot;</span><span class="token operator">:</span> <span class="token number">1543120675000</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;group_id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;group_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;普通分组&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;nickname&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pedro3&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;super&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;active&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;create_time&quot;</span><span class="token operator">:</span> <span class="token number">1543120680000</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;group_id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;group_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;普通分组&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;nickname&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pedro4&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;super&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;active&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;create_time&quot;</span><span class="token operator">:</span> <span class="token number">1543120688000</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;group_id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;group_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;普通分组&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;nickname&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pedro5&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;super&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;total_nums&quot;</span><span class="token operator">:</span> <span class="token number">6</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <p>路由: <code>admin/password/&lt;int:id&gt;</code> put 方法
+参数:</p> <table><thead><tr><th>name</th> <th style="text-align:center">说明</th> <th style="text-align:center">类型</th> <th>作用</th></tr></thead> <tbody><tr><td>new_password</td> <td style="text-align:center">新密码</td> <td style="text-align:center">string</td> <td>****</td></tr> <tr><td>confirm_password</td> <td style="text-align:center">确认密码</td> <td style="text-align:center">string</td> <td>****</td></tr></tbody></table> <p>备注： 重置用户密码</p> <p><code>发送</code>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;new_password&quot;</span><span class="token operator">:</span> <span class="token string">&quot;147258&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;confirm_password&quot;</span><span class="token operator">:</span> <span class="token string">&quot;147258&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><code>结果</code>：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;error_code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;密码修改成功&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;request&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PUT  /cms/admin/password/2&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <p>路由: <code>admin/&lt;int:id&gt;</code> delete 方法
+参数: 无</p> <p>备注： 删除某个用户</p> <p><code>结果</code>：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;error_code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;操作成功&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;request&quot;</span><span class="token operator">:</span> <span class="token string">&quot;DELETE  /cms/admin/8&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <p>路由: <code>admin/&lt;int:id&gt;</code> put 方法
+参数:</p> <table><thead><tr><th>name</th> <th style="text-align:center">说明</th> <th style="text-align:center">类型</th> <th>作用</th></tr></thead> <tbody><tr><td>email</td> <td style="text-align:center">邮箱</td> <td style="text-align:center">string</td> <td>****</td></tr> <tr><td>group_id</td> <td style="text-align:center">分组 id</td> <td style="text-align:center">int</td> <td>****</td></tr></tbody></table> <p>备注： 更新某个用户信息</p> <p><code>发送</code>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token string">&quot;113546166@gmail.com&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;group_id&quot;</span><span class="token operator">:</span> <span class="token number">5</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><code>结果</code>：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;error_code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;操作成功&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;request&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PUT  /cms/admin/2&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <p>路由: <code>admin/disable/&lt;int:id&gt;</code> put 方法
+参数: 无</p> <p>备注： 禁用某个用户</p> <hr> <p>路由: <code>admin/active/&lt;int:id&gt;</code> put 方法
+参数: 无</p> <p>备注： 激活某个用户</p> <hr> <p>路由: <code>admin/groups</code> get 方法
+参数: 支持分页</p> <p>备注： 获得所有分组及其权限信息</p> <p><code>结果</code>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;collection&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;auths&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;图书&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">&quot;auth&quot;</span><span class="token operator">:</span> <span class="token string">&quot;删除图书&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;module&quot;</span><span class="token operator">:</span> <span class="token string">&quot;图书&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;info&quot;</span><span class="token operator">:</span> <span class="token string">&quot;就是一个分组而已&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;普通分组&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;auths&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;info&quot;</span><span class="token operator">:</span> <span class="token string">&quot;物流部人员&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;物流组&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;total_nums&quot;</span><span class="token operator">:</span> <span class="token number">2</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <p>路由: <code>admin/group/all</code> get 方法
+参数: 无</p> <p>备注： 获得所有分组</p> <p><code>结果</code>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;info&quot;</span><span class="token operator">:</span> <span class="token string">&quot;就是一个分组而已&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;普通分组&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;info&quot;</span><span class="token operator">:</span> <span class="token string">&quot;物流部人员&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;物流组&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><hr> <p>路由: <code>admin/group/&lt;int:id&gt;</code> get 方法
+参数: 无</p> <p>备注： 查询一个权限组及其权限</p> <p><code>结果</code>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;auths&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;图书&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;auth&quot;</span><span class="token operator">:</span> <span class="token string">&quot;删除图书&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;module&quot;</span><span class="token operator">:</span> <span class="token string">&quot;图书&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;info&quot;</span><span class="token operator">:</span> <span class="token string">&quot;就是一个分组而已&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;普通分组&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><hr> <p>路由: <code>admin/group/</code> post 方法
+参数:</p> <table><thead><tr><th>name</th> <th style="text-align:center">说明</th> <th style="text-align:center">类型</th> <th>作用</th></tr></thead> <tbody><tr><td>name</td> <td style="text-align:center">分组名</td> <td style="text-align:center">string</td> <td>****</td></tr> <tr><td>info</td> <td style="text-align:center">分组信息</td> <td style="text-align:center">string</td> <td>****</td></tr> <tr><td>auths</td> <td style="text-align:center">分组权限</td> <td style="text-align:center">array<string></string></td> <td>****</td></tr></tbody></table> <p>备注： 新建权限组</p> <hr> <p>路由: <code>admin/group/&lt;int:id&gt;</code> put 方法
+参数:</p> <table><thead><tr><th>name</th> <th style="text-align:center">说明</th> <th style="text-align:center">类型</th> <th>作用</th></tr></thead> <tbody><tr><td>name</td> <td style="text-align:center">分组名</td> <td style="text-align:center">string</td> <td>****</td></tr> <tr><td>info</td> <td style="text-align:center">分组信息</td> <td style="text-align:center">string</td> <td>****</td></tr></tbody></table> <p>备注： 更新一个权限组</p> <hr> <p>路由: <code>admin/group/&lt;int:id&gt;</code> delete 方法
+参数: 无
+备注： 删除一个权限组</p> <hr> <p>路由: <code>admin/dispatch</code> post 方法
+参数:</p> <table><thead><tr><th>name</th> <th style="text-align:center">说明</th> <th style="text-align:center">类型</th> <th>作用</th></tr></thead> <tbody><tr><td>group_id</td> <td style="text-align:center">分组 id</td> <td style="text-align:center">int</td> <td>****</td></tr> <tr><td>auth</td> <td style="text-align:center">权限</td> <td style="text-align:center">string</td> <td>****</td></tr></tbody></table> <p>备注： 分配单个权限</p> <hr> <p>路由: <code>admin/dispatch/patch</code> post 方法
+参数:</p> <table><thead><tr><th>name</th> <th style="text-align:center">说明</th> <th style="text-align:center">类型</th> <th>作用</th></tr></thead> <tbody><tr><td>group_id</td> <td style="text-align:center">分组 id</td> <td style="text-align:center">int</td> <td>****</td></tr> <tr><td>auths</td> <td style="text-align:center">多个权限</td> <td style="text-align:center">array<string></string></td> <td>****</td></tr></tbody></table> <p>备注： 分配多个权限</p> <hr> <p>路由: <code>admin/remove</code> post 方法
+参数:</p> <table><thead><tr><th>name</th> <th style="text-align:center">说明</th> <th style="text-align:center">类型</th> <th>作用</th></tr></thead> <tbody><tr><td>group_id</td> <td style="text-align:center">分组 id</td> <td style="text-align:center">int</td> <td>****</td></tr> <tr><td>auths</td> <td style="text-align:center">多个权限</td> <td style="text-align:center">array<string></string></td> <td>****</td></tr></tbody></table> <p>备注： 删除多个权限</p> <hr></div> <div class="page-edit"><!----> <!----></div> <!----> <div class="bsa-cpc-wrapper"><div class="bsa-cpc"></div></div></div> <!----> <img src="" style="position:absolute;width:135px;left:calc(100% / 2 + 50px);bottom:10px;transform:translateX(-50%);"></div></div>
+    <script src="/assets/js/31.5d35c295.js" defer></script><script src="/assets/js/app.3184a6a2.js" defer></script>
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c3446600de53c605ba4f6c792e47dff9";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </body>
+</html>

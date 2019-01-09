@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="referrer" content="never">
+    <title>路由配置与权限管理</title>
+    <meta name="description" content="兽人永不为奴~~~除非包吃又包住～～～">
+    <link rel="icon" href="/logo.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+  <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.32b66682.css" as="style"><link rel="preload" href="/assets/js/app.3184a6a2.js" as="script"><link rel="preload" href="/assets/js/26.4cdf21f1.js" as="script"><link rel="prefetch" href="/assets/js/20.92fe233b.js"><link rel="prefetch" href="/assets/js/2.d62d4ff9.js"><link rel="prefetch" href="/assets/js/3.802dab0f.js"><link rel="prefetch" href="/assets/js/4.dbcc2adb.js"><link rel="prefetch" href="/assets/js/5.4adea544.js"><link rel="prefetch" href="/assets/js/6.58de709a.js"><link rel="prefetch" href="/assets/js/7.a5a75c7e.js"><link rel="prefetch" href="/assets/js/8.7f2e495a.js"><link rel="prefetch" href="/assets/js/9.1291fa0e.js"><link rel="prefetch" href="/assets/js/10.2fabea8f.js"><link rel="prefetch" href="/assets/js/11.bb28ef39.js"><link rel="prefetch" href="/assets/js/12.6df783fa.js"><link rel="prefetch" href="/assets/js/13.fa4956cb.js"><link rel="prefetch" href="/assets/js/14.0df9074c.js"><link rel="prefetch" href="/assets/js/15.ce06c09b.js"><link rel="prefetch" href="/assets/js/16.efe0a9a7.js"><link rel="prefetch" href="/assets/js/17.4697c9db.js"><link rel="prefetch" href="/assets/js/18.babd3f94.js"><link rel="prefetch" href="/assets/js/19.3168d3d7.js"><link rel="prefetch" href="/assets/js/21.116e62cc.js"><link rel="prefetch" href="/assets/js/22.c1a16a7c.js"><link rel="prefetch" href="/assets/js/23.a1aed0ac.js"><link rel="prefetch" href="/assets/js/24.b0a62875.js"><link rel="prefetch" href="/assets/js/25.3ad846cd.js"><link rel="prefetch" href="/assets/js/27.9aad70b3.js"><link rel="prefetch" href="/assets/js/28.6159bc67.js"><link rel="prefetch" href="/assets/js/29.f3205a01.js"><link rel="prefetch" href="/assets/js/30.c6a75514.js"><link rel="prefetch" href="/assets/js/31.5d35c295.js"><link rel="prefetch" href="/assets/js/32.e8a88456.js"><link rel="prefetch" href="/assets/js/33.5763d28a.js"><link rel="prefetch" href="/assets/js/34.eef6dff6.js"><link rel="prefetch" href="/assets/js/35.c55b1d53.js"><link rel="prefetch" href="/assets/js/36.04ec4e4f.js"><link rel="prefetch" href="/assets/js/37.1445889e.js"><link rel="prefetch" href="/assets/js/38.c2369325.js"><link rel="prefetch" href="/assets/js/39.591d4a7a.js"><link rel="prefetch" href="/assets/js/40.8b2243c5.js"><link rel="prefetch" href="/assets/js/41.bd7ec86f.js"><link rel="prefetch" href="/assets/js/42.9aa2497b.js"><link rel="prefetch" href="/assets/js/43.70b2f705.js"><link rel="prefetch" href="/assets/js/44.e72dad09.js"><link rel="prefetch" href="/assets/js/45.0c0cf019.js"><link rel="prefetch" href="/assets/js/46.36fe7f81.js"><link rel="prefetch" href="/assets/js/47.5966ce65.js"><link rel="prefetch" href="/assets/js/48.44fd153d.js"><link rel="prefetch" href="/assets/js/49.4c65524f.js"><link rel="prefetch" href="/assets/js/50.e9e1beef.js"><link rel="prefetch" href="/assets/js/51.f67e5993.js"><link rel="prefetch" href="/assets/js/52.51f3a2dd.js"><link rel="prefetch" href="/assets/js/53.25eec254.js"><link rel="prefetch" href="/assets/js/54.3cb3da5d.js"><link rel="prefetch" href="/assets/js/55.659c7163.js"><link rel="prefetch" href="/assets/js/56.658cee8e.js"><link rel="prefetch" href="/assets/js/57.6b9778d2.js"><link rel="prefetch" href="/assets/js/58.37b95470.js"><link rel="prefetch" href="/assets/js/59.de5ddd5f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.32b66682.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" style="position:relative;"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <div class="home-link router-link-active"><img src="/left-logo.png" alt="" class="logo"> <!----></div> <div class="search" style="max-width:-300px;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" placeholder="请输入组件名称" value=""> <!----></div></div> <div class="links" style="max-width:-300px;"><nav class="nav-links can-hide"><div class="nav-item"><a href="/front/git/doc.html" class="nav-link">大前端</a></div><div class="nav-item"><a href="/note/01.html" class="nav-link">读书笔记</a></div><div class="nav-item"><a href="/about.html" class="nav-link">关于</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/front/git/doc.html" class="nav-link">大前端</a></div><div class="nav-item"><a href="/note/01.html" class="nav-link">读书笔记</a></div><div class="nav-item"><a href="/about.html" class="nav-link">关于</a></div> <!----></nav> <!----></div> <div id="area" class="page"> <div class="content"><h1 id="路由配置与权限管理"><a href="#路由配置与权限管理" aria-hidden="true" class="header-anchor">#</a> 路由配置与权限管理</h1> <p>一个 CMS 系统，权限管理是比较基础的也是很重要的一块。在前端做权限管理，一般有两种做法：</p> <ul><li>视图层的访问权限</li> <li>API 的操作权限</li></ul> <h2 id="视图控制"><a href="#视图控制" aria-hidden="true" class="header-anchor">#</a> 视图控制</h2> <p>视图控制的目标是根据当前用户权限决定用户能访问哪些页面、操作哪些 Dom，典型场景是动态渲染菜单及控制各种操作按钮的显示隐藏。</p> <h3 id="菜单渲染"><a href="#菜单渲染" aria-hidden="true" class="header-anchor">#</a> 菜单渲染</h3> <p>在渲染菜单的时候，有两种不同的情况：</p> <ul><li>渲染所有菜单，当用户访问不在自己权限范围内的页面时提示权限不足。</li> <li>只显示当前用户能访问的菜单，如果用户通过 URL 强制访问，提示用户无此权限并退回到当前页面。</li></ul> <p>为了提高用户体验，Lin 框架使用第二种方式来渲染菜单，并且在框架里，路由数据是可以直接用来渲染生成左侧菜单，简化了开发流程。 <code>src/router/routes</code> 为路由配置入口，除了需要通过新窗口打开的页面如登陆页，要在当前文件下配置，其余所有子页面都挂载在<code>Home</code>组件下，需要在 <code>authRouter</code> 里配置。</p> <div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>左侧菜单最多只能渲染到二级路由，三级路由将在右侧内容区以 tab 的形式渲染。</p></div> <p>在 <code>authRouter</code>里，路由 <code>meta</code> 配置项里的 <code>auths</code> 属性，为该路由的权限配置，该属性的值类型为数组，也就是说一个页面可以配置多个权限，而登录用户至少需要拥有其中的一种权限，左侧菜单才会把该路由的路口渲染出来；如果不配置 <code>auths</code> 属性或者 <code>auths</code> 的值为空数组，表示该页面是公共页面，所有用户都可以访问。</p> <p>比如：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> authRouter <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    path<span class="token punctuation">:</span> <span class="token string">'/about'</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token string">'about'</span><span class="token punctuation">,</span>
+    component<span class="token punctuation">:</span> About<span class="token punctuation">,</span>
+    meta<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      title<span class="token punctuation">:</span> <span class="token string">'林间有风'</span> <span class="token comment">// 浏览器tab标题 默认为空</span>
+      icon<span class="token punctuation">:</span> <span class="token string">'iconfont el-icon-setting'</span> <span class="token comment">// 路由标题左侧icon 默认为空</span>
+      src<span class="token punctuation">:</span> <span class="token string">'/assets/img/icon.png'</span><span class="token punctuation">,</span> <span class="token comment">// 路由标题左侧图标（和icon只需要配置其中一种即可）默认为空</span>
+      menuTab<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token comment">// 控制二级路由在右侧内容区以tab的形式渲染，默认false，二级路由在左侧菜单渲染</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    path<span class="token punctuation">:</span> <span class="token string">'/log'</span><span class="token punctuation">,</span>
+    name<span class="token punctuation">:</span> <span class="token string">'log'</span><span class="token punctuation">,</span>
+    component<span class="token punctuation">:</span> Log<span class="token punctuation">,</span>
+    meta<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      title<span class="token punctuation">:</span> <span class="token string">'日志管理'</span><span class="token punctuation">,</span>
+      icon<span class="token punctuation">:</span> <span class="token string">'iconfont icon-rizhiguanli'</span><span class="token punctuation">,</span>
+      auths<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'查询所有日志'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token operator">...</span><span class="token punctuation">.</span><span class="token punctuation">.</span>   <span class="token comment">// 省略其他路由</span>
+
+  adminRouter<span class="token punctuation">,</span>  <span class="token comment">// 模块化导入路由数据</span>
+<span class="token punctuation">]</span>
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>当 tab 不配置或者配置为 false 时，二级路由在左侧菜单渲染，此时二级路由配置的 icon 和 src 不会生效，默认以空心圆或者实心圆展示；但是在 reuseTab 组件(历史浏览记录)会被渲染出来。</p></div> <p>所有用户都可以访问 <code>about</code> 页面，而 <code>log</code> 页面需要用户拥有<code>查询所有日志</code> 的权限才能访问。
+实现该功能的思路是：<code>authRouter</code> 保存了一份整个项目的完整路由数据，我们需要根据用户权限，对该数据进行遍历筛选，通过<code>hasPermission()</code> 来判断用户是否拥有当前路由的访问权限，把符合条件的路由按顺序拼接成一个新的数组并传给 <code>sideBar</code> 组件进行渲染。</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token comment">// 判断是否有访问该路由的权限</span>
+    <span class="token function">hasPermission</span><span class="token punctuation">(</span>router<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>router<span class="token punctuation">.</span>meta <span class="token operator">&amp;&amp;</span> router<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>auths<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>auths<span class="token punctuation">.</span><span class="token function">some</span><span class="token punctuation">(</span>auth <span class="token operator">=&gt;</span> router<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>auths<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>auth<span class="token punctuation">)</span> <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><p>在筛选数据的过程中，要注意可能会出现用户没有访问当前路由的权限但是有访问该路由子路由的权限，这时候要把当前路由和其子路由都渲染出来，所以在遍历的时候要特别注意当前路由有没有 <code>children</code>，具体的遍历过程可以参考 <code>sideBar</code> 组件里的 <code>filterSideBarList()</code>函数。</p> <p>如果用户试图通过 URL 强制访问，Lin 框架也在全局路由里做了拦截：</p> <div class="language-js extra-class"><pre class="language-js"><code>router<span class="token punctuation">.</span><span class="token function">beforeEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>to<span class="token punctuation">,</span> <span class="token keyword">from</span><span class="token punctuation">,</span> next<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">/* 路由发生变化重新计时 */</span>
+  store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'SET_STOP_TIME'</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token comment">/* 路由发生变化修改页面title */</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>to<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>title<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    document<span class="token punctuation">.</span>title <span class="token operator">=</span> to<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>title
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 判断哪些页面不需登陆便可进入</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isLoginRequired</span><span class="token punctuation">(</span>to<span class="token punctuation">.</span>name<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>logined<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">{</span> path<span class="token punctuation">:</span> <span class="token string">'/login'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token comment">// // 判断权限</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>store <span class="token operator">&amp;&amp;</span> store<span class="token punctuation">.</span>state <span class="token operator">&amp;&amp;</span> store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>user<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> isSuper <span class="token punctuation">}</span> <span class="token operator">=</span> store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>user
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>to<span class="token punctuation">.</span>path <span class="token operator">!==</span> <span class="token string">'/about'</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>isSuper <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span><span class="token function">hasPermission</span><span class="token punctuation">(</span>to<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        Vue<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">$notify</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          title<span class="token punctuation">:</span> <span class="token string">'无权限'</span><span class="token punctuation">,</span>
+          dangerouslyUseHTMLString<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+          message<span class="token punctuation">:</span> <span class="token string">'&lt;strong class=&quot;my-notify&quot;&gt;您无此页面的权限哟&lt;/strong&gt;'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">{</span> path<span class="token punctuation">:</span> <span class="token string">'/about'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>确保了用户在正常的操作过程中，无法访问与其权限不符合的页面。</p> <h3 id="dom-元素渲染"><a href="#dom-元素渲染" aria-hidden="true" class="header-anchor">#</a> Dom 元素渲染</h3> <p>除了控制页面层级的访问，Lin 框架还提供了 <code>v-auth</code> 指令，在可以发出请求的 dom 上添加该指令，根据用户权限，控制该 dom 的隐藏与显示。</p> <p>我们以能否搜索日志为例</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span>button v<span class="token operator">-</span>auth<span class="token operator">=</span><span class="token string">&quot;['修改信息','修改密码']&quot;</span><span class="token operator">&gt;</span>编辑<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+
+<span class="token comment">// 或者</span>
+
+<span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;header-right&quot;</span> v<span class="token operator">-</span>auth<span class="token operator">=</span><span class="token string">&quot;'搜索日志'&quot;</span><span class="token operator">&gt;</span>
+  <span class="token comment">// 具体展示代码省略</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+</code></pre></div><p>如果一个 dom 对应多个 api，比如当前登录的管理员想要修改自己的用户信息，但是没有修改密码的权限，那么编辑按钮显示。如果一个 dom 对应一个 api，那么直接传入字符串即可。</p> <div class="imgWrapper" data-v-2c224345><img src="/assets/img/auth.12591190.jpg" data-v-2c224345></div> <h2 id="api-控制"><a href="#api-控制" aria-hidden="true" class="header-anchor">#</a> API 控制</h2> <p>视图层的权限控制实质上就是控制显示，过滤掉无法使用的页面及 Dom 节点，让用户体验变得更加友好。但这并不安全，比如用户可以用测试工具模拟 api 发出请求，同样可以拿到想要的数据，所以真正能实现安全的是接口，没有通过后端验证的 api 请求是无法到数据的。 在 Lin 框架里，当用户登录成功后，后端会返回 token，该 token 会自动添加到 axios 的请求头 <code>Authorization</code>，这样用户发出的每一个 api 请求才能通过后端验证拿到数据。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 添加一个请求拦截器</span>
+http<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>request<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>
+  requestConfig <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>requestConfig<span class="token punctuation">.</span>url <span class="token operator">!==</span> <span class="token string">'/user/refresh'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 有access_token</span>
+      <span class="token keyword">const</span> accessToken <span class="token operator">=</span> <span class="token function">getToken</span><span class="token punctuation">(</span><span class="token string">'access_token'</span><span class="token punctuation">)</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>accessToken<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        requestConfig<span class="token punctuation">.</span>headers<span class="token punctuation">.</span>Authorization <span class="token operator">=</span> accessToken
+        <span class="token keyword">return</span> requestConfig
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> refreshToken <span class="token operator">=</span> <span class="token function">getToken</span><span class="token punctuation">(</span><span class="token string">'refresh_token'</span><span class="token punctuation">)</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>refreshToken<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        requestConfig<span class="token punctuation">.</span>headers<span class="token punctuation">.</span>Authorization <span class="token operator">=</span> refreshToken
+        <span class="token keyword">return</span> requestConfig
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> requestConfig
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  error <span class="token operator">=&gt;</span> Promise<span class="token punctuation">.</span><span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
+</code></pre></div><p>更多关于 token 添加、验证、刷新实现原理参考<a href="/lin/client/exception.html">异常机制</a></p> <h2 id="小节"><a href="#小节" aria-hidden="true" class="header-anchor">#</a> 小节</h2> <p>在 Lin 框架里，我们实现了对每个页面、每一个 Dom 节点进行权限管理，在数据请求接口添加了 token 验证，通过验证后才能从后台拿回数据。开发者只需要经过简单的配置，就能拥有一个带权限管理的 CMS 系统。</p> <div data-v-245db05e><ul class="rightMenuWrapper" data-v-245db05e></ul></div></div> <div class="page-edit"><!----> <!----></div> <!----> <div class="bsa-cpc-wrapper"><div class="bsa-cpc"></div></div></div> <!----> <img src="" style="position:absolute;width:135px;left:calc(100% / 2 + 50px);bottom:10px;transform:translateX(-50%);"></div></div>
+    <script src="/assets/js/26.4cdf21f1.js" defer></script><script src="/assets/js/app.3184a6a2.js" defer></script>
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c3446600de53c605ba4f6c792e47dff9";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </body>
+</html>
